@@ -11,7 +11,11 @@
 <body>
 
 <script type="text/ng-template" id="/home.html">
-
+  <h1>Welcome!</h1>
+  <h2>select a quiz:</h2>
+  <div ng-repeat="quiz in quizzes">
+    <a href="#/quiz/{{quiz.src}}"><h3>{{quiz.title}}</h3></a>
+  </div>
 </script>
 
 <script type="text/ng-template" id="/quiz.html">
