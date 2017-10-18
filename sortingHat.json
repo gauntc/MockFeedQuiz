@@ -1,0 +1,101 @@
+{
+  "title" : "Harry Potter Sorting Hat Quiz: Which Hogwarts House Are You?",
+  "questions" : [
+    {
+      "questionText" : "What is your favorite animal?",
+      "answers" : [
+        "Lion",
+        "Snake",
+        "Birdy",
+        "Jigglypuff"
+      ]
+    },
+    {
+      "questionText" : "Which house in Hogwarts do you identify with?",
+      "answers" : [
+        "Gryffindor",
+        "Ravenclaw",
+        "Slytherin",
+        "Hufflepuff"
+      ]
+    },
+    {
+      "questionText" : "What trait describes you best?",
+      "answers" : [
+        "Stereotypical courage that tells the reader that they should like you",
+        "Evilness",
+        "Irrelevance to the plot",
+        "Irrevelence to the plot and sound like Jigglypuff"
+      ]
+    },
+    {
+      "questionText" : "What's that mysterious ticking noise?",
+      "answers" : [
+        "Snape, Snape, Severus Snape",
+        "DUMBLEDOR!",
+        "RON, RON, RON-RON WEASley",
+        "Herrrrrrrrrmoine"
+      ]
+    },
+    {
+      "questionText" : "What is your favorite food?",
+      "answers" : [
+        "The milk of human kindness so much that it makes everyone else sick of how cliche your character is",
+        "The souls of children with lightning scars",
+        "Books",
+        "Lots of pizza"
+      ]
+    },
+    {
+      "questionText" : "What shapes do you see when you look in the clouds?",
+      "answers" : [
+        "A griffin's door",
+        "A raven's claw",
+        "A slither inn",
+        "Jigglypuff"
+      ]
+    },
+    {
+      "questionText" : "What do you like to do in your free time?",
+      "answers" : [
+        "Kill monsters",
+        "Be a monster",
+        "Wear glasses and act smarter than everyone else",
+        "Eat pizza"
+      ]
+    },
+    {
+      "questionText" : "Who would play you in a movie?",
+      "answers" : [
+        "Daniel Radcliffe",
+        "The guy who plays Malfloy",
+        "I can't remember a single person who actually plays a Ravenclaw",
+        "Mika Kanai (voice of Jigglypuff)"
+      ]
+    },
+    {
+      "questionText" : "What is the saddest thing you can think of?",
+      "answers" : [
+        "Dead parents",
+        "Voldemort not being reincarnated as a creepy snake man fast enough",
+        "People ignoring your house because the author made it irrelevant to anything in the books",
+        "No pizza"
+      ]
+    },
+    {
+      "questionText" : "What is the happiest thing you can think of?",
+      "answers" : [
+        "Harry Potter getting placed in Gryiffindor by the sorting hat ;)",
+        "Dead parents",
+        "SOmeone saying they think Ravenclaw is the best",
+        "Unlimited pizza"
+      ]
+    }
+  ],
+  "results" : [
+    {
+      "condition" : "true",
+      "resultText": "You are a MUGGLE because Hogwarts isn't real and the books are a little overrated."
+    }
+  ]
+}
