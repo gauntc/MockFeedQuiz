@@ -23,6 +23,7 @@ angular.module('News', ['ui.router'])
     $scope.quizzes = [];
     $http.get('manifest.json').then(function(data) {
       console.log('data', data);
+      data = data.data;
       var quizList = data.quizLink;
       for( var i = 0; i < quizList.length; i++) {
        $scope.quizzes.push(quizList[i]);
