@@ -10,6 +10,11 @@ angular.module('News', ['ui.router'])
       url: '/quiz/{src}',
       templateUrl: '/quiz.html',
       controller: 'QuizCtrl'
+    }).state('results',
+    {
+      url: '/result/{src}',
+      templateUrl: '/result.html',
+      controller: 'ResultCtrl'
     });
     $urlRouterProvider.otherwise('home');
   }])
@@ -51,4 +56,15 @@ angular.module('News', ['ui.router'])
     $scope.incrementUpvotes = function(comment){
       comment.upvotes += 1;
     };
+  }])
+  .controller('ResultController', ['$scope', '$stateParams', function($scope, $stateParams) {
+    $scope.results = '';
+    $.getJSON($stateParams.src, function(data) {
+      var resultOpts = data.results;
+      for( var i = 0; i < resultOpts.length; i++) {
+       if(JSON.parse(resultOpts[i].condition)) {
+        $scope.results += resultOpts[i].resultText; 
+       }
+      }
+    });
   }]);
