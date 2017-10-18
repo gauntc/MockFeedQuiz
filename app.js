@@ -19,7 +19,7 @@ angular.module('News', ['ui.router'])
       var o = { posts: [] };
       return o;
   }])
-  .controller('MainCtrl', [ '$scope', function($scope){
+  .controller('MainCtrl', [ '$scope', '$http', function($scope, $http){
     $scope.quizzes = [];
     $http.get('manifest.json').then(function(data) {
       console.log('data', data);
