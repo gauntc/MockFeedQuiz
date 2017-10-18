@@ -21,6 +21,7 @@ angular.module('News', ['ui.router'])
   }])
   .controller('MainCtrl', [ '$scope', '$http', function($scope, $http){
     $scope.quizzes = [];
+
     $http.get('manifest.json').then(function(response) {
       console.log('data', data);
       var data = response.data;
