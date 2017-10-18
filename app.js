@@ -7,9 +7,9 @@ angular.module('News', ['ui.router'])
       controller: 'MainCtrl'
     }).state('posts',
     {
-      url: '/posts/{id}',
-      templateUrl: '/posts.html',
-      controller: 'PostsCtrl'
+      url: '/quiz/{src}',
+      templateUrl: '/quiz.html',
+      controller: 'QuizCtrl'
     });
     $urlRouterProvider.otherwise('home');
   }])
@@ -19,8 +19,16 @@ angular.module('News', ['ui.router'])
       var o = { posts: [] };
       return o;
   }])
-  .controller('MainCtrl', [ '$scope', 'postFactory', function($scope, postFactory){
-    $scope.test = 'Hello world!';
+  .controller('MainCtrl', [ '$scope', 'postFactory', function($scope){
+    $scope.quizzes = [];
+    $.getJSON('manifest.json', function(data) {
+      var quizList = data.quizLink;
+      for( var i = 0; i < quizList.length; i++) {
+       $scope.quizzes.push(quizList[i]);
+      }
+    };
+
+    /*$scope.test = 'Hello world!';
     $scope.posts = postFactory.posts;
     $scope.addPost = function(){
       if($scope.formContent === '') { return; }
@@ -29,7 +37,7 @@ angular.module('News', ['ui.router'])
     };
     $scope.incrementUpvotes = function(post) {
       post.upvotes += 1;
-    };
+    };*/
   }])
   .controller('PostsCtrl', [ '$scope', '$stateParams', 'postFactory', function($scope, $stateParams, postFactory){
     $scope.post = postFactory.posts[$stateParams.id];
