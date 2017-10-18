@@ -19,7 +19,7 @@ angular.module('News', ['ui.router'])
       var o = { posts: [] };
       return o;
   }])
-  .controller('MainCtrl', [ '$scope', 'postFactory', function($scope){
+  .controller('MainCtrl', [ '$scope', function($scope){
     $scope.quizzes = [];
     $.getJSON('manifest.json', function(data) {
       var quizList = data.quizLink;
