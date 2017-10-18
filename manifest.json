@@ -3,6 +3,10 @@
     {
       "title": "Default Quiz",
       "src": "default.json"
+    },
+    {
+      "title": "Harry Potter Sorting Hat Quiz",
+      "src": "sortingHat.json"
     }
   ]
 }
