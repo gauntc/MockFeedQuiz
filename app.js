@@ -26,7 +26,7 @@ angular.module('News', ['ui.router'])
       for( var i = 0; i < quizList.length; i++) {
        $scope.quizzes.push(quizList[i]);
       }
-    };
+    });
 
     /*$scope.test = 'Hello world!';
     $scope.posts = postFactory.posts;
