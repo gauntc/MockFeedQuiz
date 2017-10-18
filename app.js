@@ -57,7 +57,10 @@ angular.module('MockFeed', ['ui.router'])
       if ($scope.currQuestionIndex == $scope.questions.length) {
         $location.path('/result');
       }
-    }
+    };
+    $scope.indexToChar = function(index) {
+      return String.fromCharCode(65 + index);
+    };
   }])
   .controller('ResultCtrl', [ '$scope', '$http', '$location', 'quizService', function($scope, $http, $location, quizService) {
     $scope.result = quizService.quiz.results[0].resultText;

@@ -28,25 +28,34 @@
 </script>
 
 <script type="text/ng-template" id="/quiz.html">
-  <div class="question">
-    <h2>{{quizTitle}}</h2>
-    <h3>{{questions[currQuestionIndex].questionText}}</h3>
-    <br>
-    <button type="button" ng-click="submitAnswer(option)" ng-repeat="option in questions[currQuestionIndex].answers">{{option}}</button>
+  <h2>{{quizTitle}}</h2>
+  <h3>{{questions[currQuestionIndex].questionText}}</h3>
+  <br>
+    <div class="button-container">
+    <button type="button" ng-click="submitAnswer(option)" ng-repeat="option in questions[currQuestionIndex].answers">
+      {{indexToChar($index)}}: {{option}}
+    </button>
   </div>
 </script>
 
 <script type="text/ng-template" id="/result.html">
   <h2>Result:</h2>
-  {{String.fromCharCode(65 + 10)}}
-  <div class="progress" ng-repeat="amount in answers track by $index">
-    <div class="progress-bar" role="progressbar" aria-valuenow="{{100 * amount / numberOfQuestions}}"
-    aria-valuemin="0" aria-valuemax="100" style="width:{{100 * amount / numberOfQuestions}}%">
-      {{getProgressBarLabel($index, amount)}}
-    </div>
+  <table id="results">
+    <tr>
+      <td><h3>{{result}}</h3></td>
+      <td>
+        <div class="progress" ng-repeat="amount in answers track by $index">
+          <div class="progress-bar" role="progressbar" aria-valuenow="{{100 * amount / numberOfQuestions}}"
+          aria-valuemin="0" aria-valuemax="100" style="width:{{100 * amount / numberOfQuestions}}%">
+            {{getProgressBarLabel($index, amount)}}
+          </div>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <div class="button-container">
+    <button type="button" ng-click="returnToHome()">Return to Home</button>
   </div>
-  <h3>{{result}}</h3>
-  <button type="button" ng-click="returnToHome()">Return to Home</button>
 </script>
 
 </body>
