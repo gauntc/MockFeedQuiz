@@ -1,4 +1,20 @@
 {
-
-
+  "title" : "Default Quiz",
+  "questions" : [
+    {
+      "questionText" : "Number 1",
+      "answers" : [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    }
+  ],
+  "results" : [
+    {
+      "condition" : "true",
+      "resultText": "You finished the quiz."
+    }
+  ]
 }
