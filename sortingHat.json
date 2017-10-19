@@ -25,7 +25,7 @@
         "Stereotypical courage that tells the reader that they should like you",
         "Evilness",
         "Irrelevance to the plot",
-        "Irrevelence to the plot and sound like Jigglypuff"
+        "Irevelence to the plot and sound like Jigglypuff"
       ]
     },
     {
@@ -40,7 +40,7 @@
     {
       "questionText" : "What is your favorite food?",
       "answers" : [
-        "The milk of human kindness so much that it makes everyone else sick of how cliche your character is",
+        "The milk of human kindness so much that it makes anyone who isn't a goody-two-shoes sick",
         "The souls of children with lightning scars",
         "Books",
         "Lots of pizza"
@@ -52,7 +52,7 @@
         "A griffin's door",
         "A raven's claw",
         "A slither inn",
-        "Jigglypuff"
+        "Jigglypuff eating pizza"
       ]
     },
     {
@@ -60,8 +60,8 @@
       "answers" : [
         "Kill monsters",
         "Be a monster",
-        "Wear glasses and act smarter than everyone else",
-        "Eat pizza"
+        "Wear glasses and act smarter than everyone else like a true Ravenclaw",
+        "Sing other Pokemon to sleep"
       ]
     },
     {
@@ -87,7 +87,7 @@
       "answers" : [
         "Harry Potter getting placed in Gryiffindor by the sorting hat ;)",
         "Dead parents",
-        "SOmeone saying they think Ravenclaw is the best",
+        "Someone saying they think Ravenclaw is the best",
         "Unlimited pizza"
       ]
     }
@@ -95,7 +95,7 @@
   "results" : [
     {
       "condition" : "true",
-      "resultText": "You are a MUGGLE because Hogwarts isn't real and the books are a little overrated."
+      "resultText": "You are a MUGGLE because Hogwarts isn't real and the books are a frankly little overrated."
     }
   ]
 }

@@ -29,6 +29,7 @@
 
 <script type="text/ng-template" id="/quiz.html">
   <h2>{{quizTitle}}</h2>
+  <h4>{{currQuestionIndex + 1}} / {{questions.length}}</h4>
   <h3>{{questions[currQuestionIndex].questionText}}</h3>
   <br>
     <div class="button-container" ng-repeat="option in questions[currQuestionIndex].answers">
@@ -36,6 +37,10 @@
       {{indexToChar($index)}}: {{option}}
     </button>
   </div>
+  <footer style="bottom: 10px; left: 10px; position: absolute; text-align: center;"
+    ng-if="isFooterVisible()">
+    Courtesy of John Deming, HumorU
+  </footer>
 </script>
 
 <script type="text/ng-template" id="/result.html">
@@ -56,6 +61,10 @@
   <div class="button-container">
     <button type="button" ng-click="returnToHome()">Return to Home</button>
   </div>
+  <footer style="bottom: 10px; left: 10px; position: absolute; text-align: center;"
+    ng-if="isFooterVisible()">
+    Courtesy of John Deming, HumorU
+  </footer>
 </script>
 
 </body>

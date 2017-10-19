@@ -61,6 +61,9 @@ angular.module('MockFeed', ['ui.router'])
     $scope.indexToChar = function(index) {
       return String.fromCharCode(65 + index);
     };
+    $scope.isFooterVisible = function() {
+      return $scope.quizTitle == 'Harry Potter Sorting Hat Quiz: Which Hogwarts House Are You?';
+    };
   }])
   .controller('ResultCtrl', [ '$scope', '$http', '$location', 'quizService', function($scope, $http, $location, quizService) {
     $scope.result = quizService.quiz.results[0].resultText;
@@ -72,10 +75,13 @@ angular.module('MockFeed', ['ui.router'])
         percentage = "0";
       }
       return String.fromCharCode(65 + index) + " : " + percentage + "%";
-    }
+    };
     $scope.returnToHome = function() {
       $location.path('/home');
       quizService.quiz = {};
       quizService.answers = [];
+    };
+    $scope.isFooterVisible = function() {
+      return quizService.quiz.title == 'Harry Potter Sorting Hat Quiz: Which Hogwarts House Are You?';
     }
   }]);
