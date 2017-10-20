@@ -13,10 +13,10 @@
     {
       "questionText" : "Which house in Hogwarts do you identify with?",
       "answers" : [
-        "Gryffindor",
-        "Ravenclaw",
-        "Slytherin",
-        "Hufflepuff"
+        "Gryffindor ;)",
+        "Ravenclaw ;)",
+        "Slytherin ;)",
+        "Hufflepuff ;)"
       ]
     },
     {
@@ -77,7 +77,7 @@
       "questionText" : "What is the saddest thing you can think of?",
       "answers" : [
         "Dead parents",
-        "Voldemort not being reincarnated as a creepy snake man fast enough",
+        "Voldemort not being reincarnated as a creepy snake-man fast enough",
         "People ignoring your house because the author made it irrelevant to anything in the books",
         "No pizza"
       ]

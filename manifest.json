@@ -1,8 +1,8 @@
 {
   "quizLinks": [
     {
-      "title": "Default Quiz",
-      "src": "default.json"
+      "title": "TestDefault",
+      "src": "testQuiz.json"
     },
     {
       "title": "Harry Potter Sorting Hat Quiz",
